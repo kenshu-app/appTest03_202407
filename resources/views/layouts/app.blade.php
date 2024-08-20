@@ -22,7 +22,9 @@
             @isset($header)
                 <header class="bg-white shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                        <h2 class="font-light text-5xl text-gray-600 leading-tight">
+                            {{ $header }}
+                        </h2>
                     </div>
                 </header>
             @endisset

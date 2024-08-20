@@ -271,5 +271,9 @@ return [
         'username'                 => 'ユーザー名',
         'value'                    => '価値',
         'year'                     => '年',
+        'title'     => '書籍名',
+        'author'    => '著者名',
+        'publisher' => '出版社名',
+        'review'    => '書籍批評'
     ],
 ];
