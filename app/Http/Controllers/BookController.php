@@ -29,7 +29,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $request->validate([
             'title'     => 'required|max:30',
             'author'    => 'max:20',
             'publisher' => 'max:20'
@@ -61,8 +61,8 @@ class BookController extends Controller
      */
     public function update(Request $request, Book $book)
     {
-        $this->authorize($book);
-        $this->validate($request, [
+        // $this->authorize($book);
+        $request->validate([
             'title'     => 'required|max:20',
             'author'    => 'max:20',
             'publisher' => 'max:20'
